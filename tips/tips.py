@@ -23,15 +23,15 @@ fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=tips, x='total_bill')
 st.pyplot(fig)
 
-st.write(
+st.write( # 갑자기 이상하게 변함
     '''
     ### 총액 중 팁의 비율
     '''
 )
-fig = plt.figure(figsize=(8, 4))
+fig1 = plt.figure(figsize=(8, 4))
 sns.kdeplot(data=tips, x='total_bill')
 sns.rugplot(data=tips, x='tip')
-st.pyplot(fig)
+st.pyplot(fig1)
 
 st.write(
     '''
