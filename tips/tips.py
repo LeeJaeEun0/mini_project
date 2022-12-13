@@ -35,6 +35,22 @@ st.pyplot(fig)
 
 st.write(
     '''
+    ### 식사 인원수
+    '''
+)
+fig = plt.figure(figsize=(8, 4))
+sns.histplot(data=tips, x='size')
+st.pyplot(fig)
+
+st.write(
+    '''
+    ### 인원수와 총액과 팁
+    '''
+)
+sns.histplot(data=tips, x='size', hue='total_bill')
+
+st.write(
+    '''
     ### 인원수와 팁의 상관관계
     '''
 )
@@ -42,14 +58,6 @@ fig = plt.figure(figsize=(8, 4))
 sns.boxplot(x='size', y='total_bill', data=tips)
 st.pyplot(fig)
 
-st.write(
-    '''
-    ### 식사 인원수
-    '''
-)
-fig = plt.figure(figsize=(8, 4))
-sns.histplot(data=tips, x='size')
-st.pyplot(fig)
 
 st.write(
     '''
