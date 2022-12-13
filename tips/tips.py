@@ -9,4 +9,6 @@ st.title("tips")
 tips = sns.load_dataset('tips')
 # st.write(tips)
 
+fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=tips, x='size')
+st.pyplot(fig)
