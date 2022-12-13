@@ -16,7 +16,7 @@ st.write(tips)
 
 st.write(
     '''
-    ### tips의 total_bill 빈도수
+    ### 총액의 빈도수
     '''
 )
 fig = plt.figure(figsize=(8, 4))
@@ -34,7 +34,7 @@ st.pyplot(fig)
 
 st.write(
     '''
-    ### 전체적인 그래프
+    ### 인원수에 따른 그래프
     '''
 )
 
