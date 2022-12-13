@@ -37,5 +37,6 @@ st.write(
     ### 전체적인 그래프
     '''
 )
-sns.pairplot(data = tips)
-plt.show()
+
+fig = sns.pairplot(tips)
+st.pyplot(fig)
