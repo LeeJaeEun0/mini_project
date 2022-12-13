@@ -9,7 +9,4 @@ st.title("tips")
 tips = sns.load_dataset('tips')
 # st.write(tips)
 
-sns.barplot(x='day', y='size', data=tips)
-plt.show()
-sns.barplot(x='size', y='time', data=tips)
-plt.show()
+sns.histplot(data=tips, x='size')
