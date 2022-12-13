@@ -32,5 +32,6 @@ fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=tips, x='size')
 st.pyplot(fig)
 
+fig = plt.figure(figsize=(8, 4))
 sns.pairplot(data = tips)
 st.pyplot(fig)
