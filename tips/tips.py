@@ -25,6 +25,15 @@ st.pyplot(fig)
 
 st.write(
     '''
+    ### 총액과 팁의 빈도수
+    '''
+)
+fig = plt.figure(figsize=(8, 4))
+sns.histplot(data=tips, x='total_bill')
+st.pyplot(fig)
+
+st.write(
+    '''
     ### 식사 인원수
     '''
 )
@@ -34,7 +43,7 @@ st.pyplot(fig)
 
 st.write(
     '''
-    ### 인원수에 따른 그래프
+    ### 인원수에 따른 분석
     '''
 )
 
