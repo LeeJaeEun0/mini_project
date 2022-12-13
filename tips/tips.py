@@ -42,14 +42,6 @@ fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=tips, x='size')
 st.pyplot(fig)
 
-st.write(
-    '''
-    ### 인원수와 총액
-    '''
-)
-sns.kdeplot(data=tips, x='total_bill', hue='size', multiple='stack')
-st.pyplot(fig)
-
 
 st.write(
     '''
