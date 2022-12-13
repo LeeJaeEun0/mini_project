@@ -14,6 +14,11 @@ st.write(
 )
 st.write(tips)
 
+st.write(
+    '''
+    ### 식사 인원수
+    '''
+)
 fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=tips, x='size')
 st.pyplot(fig)
