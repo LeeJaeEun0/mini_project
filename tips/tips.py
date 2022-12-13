@@ -38,5 +38,5 @@ st.write(
     '''
 )
 
-fig = sns.pairplot(tips)
+fig = sns.pairplot(tips, hue="size")
 st.pyplot(fig)
