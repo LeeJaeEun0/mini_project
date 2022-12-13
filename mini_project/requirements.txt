@@ -1,5 +1,4 @@
+matplotlib
 streamlit
-numpy
+yfinance
 pandas
-matplotlib.pyplot
-seaborn
