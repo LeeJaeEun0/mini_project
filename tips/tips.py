@@ -12,7 +12,7 @@ st.write(
     ## tips 데이터
     '''
 )
-st.write(tips.head)
+st.write(tips)
 
 fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=tips, x='size')
