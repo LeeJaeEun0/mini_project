@@ -32,6 +32,9 @@ fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=tips, x='size')
 st.pyplot(fig)
 
-fig = plt.figure(figsize=(8, 4))
+st.write(
+    '''
+    ### 전체적인 그래프
+    '''
+)
 sns.pairplot(data = tips)
-st.pyplot(fig)
