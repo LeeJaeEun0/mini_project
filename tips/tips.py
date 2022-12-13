@@ -44,10 +44,10 @@ st.pyplot(fig)
 
 st.write(
     '''
-    ### 인원수와 총액과 팁
+    ### 인원수와 총액
     '''
 )
-sns.histplot(data=tips, x='size', hue='total_bill')
+sns.kdeplot(data=tips, x='total_bill', hue='size', multiple='stack')
 st.pyplot(fig)
 
 
