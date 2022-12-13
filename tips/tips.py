@@ -25,6 +25,16 @@ st.pyplot(fig)
 
 st.write(
     '''
+    ### 총액 중 팁의 비율
+    '''
+)
+fig = plt.figure(figsize=(8, 4))
+sns.kdeplot(data=tips, x='total_bill')
+sns.rugplot(data=tips, x='tip')
+st.pyplot(fig)
+
+st.write(
+    '''
     ### 인원수와 팁의 상관관계
     '''
 )
