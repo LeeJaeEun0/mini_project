@@ -16,6 +16,15 @@ st.write(tips)
 
 st.write(
     '''
+    ### tips의 total_bill 빈도수
+    '''
+)
+fig = plt.figure(figsize=(8, 4))
+sns.histplot(data=tips, x='total_bill')
+st.pyplot(fig)
+
+st.write(
+    '''
     ### 식사 인원수
     '''
 )
