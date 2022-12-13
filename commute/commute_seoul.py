@@ -12,5 +12,5 @@ st.write(
 
 # UTF-8 / CP-949
 # https://seong6496.tistory.com/269
-df = pd.read_csv('../cmmute/data.csv', encoding='cp949')
+df = pd.read_csv('./commute/data.csv', encoding='cp949')
 st.write(df)
