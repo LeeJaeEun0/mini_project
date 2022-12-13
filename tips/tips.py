@@ -38,3 +38,4 @@ st.write(
     '''
 )
 sns.pairplot(data = tips)
+plt.show()
