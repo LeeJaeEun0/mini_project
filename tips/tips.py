@@ -33,17 +33,8 @@ sns.kdeplot(data=tips, x='total_bill')
 sns.rugplot(data=tips, x='tip')
 st.pyplot(fig1)
 
-st.write(
-    '''
-    ### 식사 인원수
-    '''
-)
-fig = plt.figure(figsize=(8, 4))
-sns.histplot(data=tips, x='size')
-st.pyplot(fig)
 
-
-st.write(
+st.write( # 갑작스럽게 이상하게 보임
     '''
     ### 인원수와 팁의 상관관계
     '''
@@ -52,6 +43,14 @@ fig = plt.figure(figsize=(8, 4))
 sns.boxplot(x='total_bill', y='tip', data=tips)
 st.pyplot(fig)
 
+st.write(
+    '''
+    ### 식사 인원수
+    '''
+)
+fig = plt.figure(figsize=(8, 4))
+sns.histplot(data=tips, x='size')
+st.pyplot(fig)
 
 st.write(
     '''
