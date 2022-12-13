@@ -47,7 +47,10 @@ st.write(
     ### 인원수와 총액과 팁
     '''
 )
+fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=tips, x='size', hue='total_bill')
+st.pyplot(fig)
+
 
 st.write(
     '''
