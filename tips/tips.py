@@ -25,11 +25,11 @@ st.pyplot(fig)
 
 st.write(
     '''
-    ### 총액과 팁의 빈도수
+    ### 인원수와 팁의 상관관계
     '''
 )
 fig = plt.figure(figsize=(8, 4))
-sns.histplot(data=tips, x='total_bill')
+sns.boxplot(x='size', y='total_bill', data=tips)
 st.pyplot(fig)
 
 st.write(
