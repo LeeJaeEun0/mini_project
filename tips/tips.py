@@ -23,16 +23,6 @@ fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=tips, x='total_bill')
 st.pyplot(fig)
 
-st.write( # 갑자기 이상하게 변함
-    '''
-    ### 총액 중 팁의 비율
-    '''
-)
-fig1 = plt.figure(figsize=(8, 4))
-sns.kdeplot(data=tips, x='total_bill')
-sns.rugplot(data=tips, x='tip')
-st.pyplot(fig1)
-
 
 st.write( # 갑작스럽게 이상하게 보임
     '''
@@ -43,6 +33,16 @@ fig = plt.figure(figsize=(8, 4))
 sns.boxplot(x='total_bill', y='tip', data=tips)
 st.pyplot(fig)
 
+st.write( 
+    '''
+    ### 총액 중 팁의 비율
+    '''
+)
+fig1 = plt.figure(figsize=(8, 4))
+sns.kdeplot(data=tips, x='total_bill')
+sns.rugplot(data=tips, x='tip')
+st.pyplot(fig1)
+
 st.write(
     '''
     ### 식사 인원수
@@ -52,7 +52,7 @@ fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=tips, x='size')
 st.pyplot(fig)
 
-st.write(
+st.write( # 갑자기 이상하게 출려 ㅜ
     '''
     ### 인원수에 따른 분석
     '''
