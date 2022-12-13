@@ -7,7 +7,7 @@ import seaborn as sns
 st.title("tips")
 
 tips = sns.load_dataset('tips')
-st.write(tips)
+# st.write(tips)
 
 sns.barplot(x='day', y='size', data=tips)
 plt.show()
