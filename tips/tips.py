@@ -8,10 +8,11 @@ tips = sns.load_dataset('tips')
 st.write(
     '''
     # tips 데이터셋을 이용한 데이터 시각화
-    ## tips 데이터
     '''
 )
-st.write(tips)
+
+if st.button('data copyright link'):
+    st.write(tips)
 
 st.write(
     '''
