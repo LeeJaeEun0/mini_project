@@ -37,7 +37,8 @@ st.write(
     '''
 )
 fig = plt.figure(figsize=(8, 4))
-sns.displot(data=tips, x='total_bill')
+sns.kdeplot(data=tips, x = 'total_bill')
+sns.rugplot(data=tips, x = 'tip')
 st.pyplot(fig)
 
 
