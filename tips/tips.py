@@ -12,6 +12,7 @@ st.write(
     '''
 )
 st.write(tips)
+
 st.write(
     '''
     ### 총액의 빈도수
@@ -20,6 +21,7 @@ st.write(
 fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=tips, x='total_bill')
 st.pyplot(fig)
+
 st.write(
     '''
     ### 식사 인원수
@@ -35,8 +37,8 @@ st.write(
     '''
 )
 fig = plt.figure(figsize=(8, 4))
-sns.boxplot(x='size', y='total_bill', data=tips)
-# st.pyplot(fig)
+sns.histplot(data=tips, x='size', hue="total_bill") 
+st.pyplot(fig)
 
 st.write(
     '''
