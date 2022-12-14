@@ -43,7 +43,7 @@ st.pyplot(fig)
 
 st.write(
     '''
-    ### 박스
+    ### 인원수와 총액
     '''
 )
 fig = plt.figure(figsize=(8, 4))
@@ -57,3 +57,4 @@ st.write(
 )
 fig = sns.pairplot(tips, hue="size")
 st.pyplot(fig)
+
