@@ -37,8 +37,10 @@ st.write(
     '''
 )
 fig = plt.figure(figsize=(8, 4))
-sns.displot(data=tips, x='total_bill',kde=True)
+sns.displot(data=tips, x='total_bill')
 st.pyplot(fig)
+
+
 
 st.write(
     '''
