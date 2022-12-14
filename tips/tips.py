@@ -43,7 +43,7 @@ st.pyplot(fig)
 
 st.write(
     '''
-    ### 인원수와 팁의 상관관계
+    ### 박스
     '''
 )
 fig = plt.figure(figsize=(8, 4))
