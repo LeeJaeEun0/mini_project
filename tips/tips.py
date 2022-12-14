@@ -11,7 +11,8 @@ st.write(
     '''
 )
 
-if st.button('data copyright link'):
+if st.checkbox('Show raw data'):
+    st.subheader('Raw data')
     st.write(tips)
 
 st.write(
