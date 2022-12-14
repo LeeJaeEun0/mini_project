@@ -37,7 +37,7 @@ st.write(
     '''
 )
 fig = plt.figure(figsize=(8, 4))
-sns.histplot(data=tips, x='size', hue="total_bill") 
+sns.histplot(data=tips, x='size', hue="total_bill" ,multiple='stack') 
 st.pyplot(fig)
 
 st.write(
